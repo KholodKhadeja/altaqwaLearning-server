@@ -8,7 +8,8 @@ const userSchema = new Schema({
     lastName:{type:String, required:true},
     userName:{type:String, required:true, unique: true},
     password:{type:String, required:true},
-    age:{type:String,default: ageEnum[0], enum: [...ageEnum]}
+    age:{type:String,default: ageEnum[0], enum: [...ageEnum]},
+    isAdmin: { type: Boolean, default: false },
 });
 
 const User = mongoose.model("users", userSchema);
