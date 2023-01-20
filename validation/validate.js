@@ -1,7 +1,5 @@
-const validate = (schema, Inputs) =>{
-    return schema.validateAsync(Inputs,{
-        abortEarly:false
-    })
-}; 
-
-module.exports=validate;
+const validate = (schema, userInput) => {
+    return schema.validateAsync(userInput, { abortEarly: false });
+  };
+  
+  module.exports = validate;
