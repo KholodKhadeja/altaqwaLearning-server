@@ -31,7 +31,7 @@ router.patch("/", async (req, res)=>{
         const validatedValues = await userValidation.validateupdateUserSchema(req.body);
         const userData = await usersModel.updateUserById(validatedValues.id, validatedValues.firstName,
             validatedValues. lastName, validatedValues.userName, validatedValues.password,
-            validatedValues.age, validatedValues.isAdmin);
+            validatedValues.age);
          res.json({msg:"updated successfully!!"});
 
     }catch(err){
