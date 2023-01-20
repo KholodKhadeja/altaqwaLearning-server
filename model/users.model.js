@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema= mongoose.Schema;
 const ageEnum = require("../enums/ageEnum");
-const { boolean, bool } = require("joi");
+const { Boolean } = require("joi");
 
 const userSchema = new Schema({
     firstName:{type:String, required:true},

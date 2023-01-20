@@ -1,4 +1,4 @@
-const Joi=require("Joi");
+const Joi=require("joi");
 const validate = require ("./validate");
 
 const newLessonSchema = Joi.object({
