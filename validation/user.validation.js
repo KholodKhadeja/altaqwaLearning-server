@@ -7,8 +7,7 @@ const newUserSchema = Joi.object({
     lastName:Joi.string().required().min(5).max(30).trim(),
     userName:Joi.string().required().min(5).max(100),
     password:Joi.string().required(),
-    age:Joi.string().valid(...ageNum),
-    isAdmin: Joi.boolean()
+    age:Joi.string().valid(...ageNum)
 }); 
 
 const updateUserSchema = Joi.object({
@@ -17,8 +16,7 @@ const updateUserSchema = Joi.object({
     lastName:Joi.string().required().min(5).max(30).trim(),
     userName:Joi.string().required().min(5).max(100),
     password:Joi.string().required(),
-    age:Joi.string().valid(...ageNum),
-    isAdmin:Joi.boolean()
+    age:Joi.string().valid(...ageNum)
 })
 
 const deleteUserSchemaById = Joi.object({
